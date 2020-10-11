@@ -27,7 +27,8 @@ func (Calc) Operate(firstValue int, secondValue int, operator string) int {
 	}
 }
 
-func (Calc) toInt(entry string) int {
+// ToInt is ...
+func (Calc) ToInt(entry string) int {
 	intValue, err := strconv.Atoi(entry)
 	if err == nil {
 		return intValue
