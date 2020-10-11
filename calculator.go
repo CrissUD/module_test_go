@@ -1,4 +1,4 @@
-package module_test_go
+package calculatormodule
 
 import (
 	"bufio"
@@ -7,8 +7,10 @@ import (
 	"strconv"
 )
 
+// Calc is ...
 type Calc struct{}
 
+// Operate is ...
 func (Calc) Operate(firstValue int, secondValue int, operator string) int {
 	switch operator {
 	case "+":
