@@ -1,4 +1,4 @@
-package calculatormodule
+package module_test_go
 
 import (
 	"bufio"
