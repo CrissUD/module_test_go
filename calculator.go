@@ -7,9 +7,9 @@ import (
 	"strconv"
 )
 
-type calc struct{}
+type Calc struct{}
 
-func (calc) operate(firstValue int, secondValue int, operator string) int {
+func (Calc) Operate(firstValue int, secondValue int, operator string) int {
 	switch operator {
 	case "+":
 		return firstValue + secondValue
@@ -25,7 +25,7 @@ func (calc) operate(firstValue int, secondValue int, operator string) int {
 	}
 }
 
-func (calc) toInt(entry string) int {
+func (Calc) toInt(entry string) int {
 	intValue, err := strconv.Atoi(entry)
 	if err == nil {
 		return intValue
